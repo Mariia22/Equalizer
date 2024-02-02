@@ -52,7 +52,6 @@ function createAnalyzer() {
 
 function renderFrame() {
   analyser.getByteFrequencyData(frequencyData);
-  console.log(frequencyData);
   for (let i = 0; i < numberOfColumns; i++) {
     for (let j = 0; j < numberOfColumns; j++) {
       const row = document.getElementById("column" + i + "row" + j);
