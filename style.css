@@ -14,15 +14,20 @@ body {
 }
 
 .grid {
-  margin-top: 20px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+  margin-top: 30px;
 }
 
 .grid__bar {
-  display: inline-block;
+  display: block;
   background: white;
-  margin: 0 2px;
   width: 25px;
   height: 25px;
   border: 1px solid black;
+}
+
+.grid__bar .non__empty {
+  background-color: greenyellow;
 }
